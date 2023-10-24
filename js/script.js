@@ -10,13 +10,13 @@ pageTurnBtn.forEach((el, index) => {
             pageTurn.classList.remove('turn');
             setTimeout(() => {
                 pageTurn.style.zIndex = 20 - index;
-            }, 5000);
+            }, 500);
         }
         else { 
             pageTurn.classList.add('turn');
             setTimeout(() => {
             pageTurn.style.zIndex = 20 + index;
-        }   , 5000);
+            }, 500);
         }
     }
 })
