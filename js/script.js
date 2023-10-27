@@ -60,12 +60,31 @@ backProfileBtn.onclick = () => {
             setTimeout(() => {
                 reverseIndex();
                 pages[pageNumber].style.zIndex = 10 + index;
-            })
+            }, 500)
         }, (index + 1) * 200 + 100)
     })
 }
 
 //opening animation
+const coverRight = document.querySelector('.cover.cover-right');
+
 //opening animation (cover right animation)
-//opening animation (page left or profile page animation)
+setTimeout(() => {
+    coverRight.classList.add('turn');
+}, 2100)
+
 //opening animation (all page right animation)
+pages.forEach((_, index) => {
+    setTimeout(() => {
+        reverseIndex();
+        pages[pageNumber].classList.remove('turn');
+        
+        setTimeout(() => {
+            reverseIndex();
+            pages[pageNumber].style.zIndex = 10 + index;
+        }, 500)
+    }, (index + 1) * 200 + 100)
+})
+
+
+//opening animation (page left or profile page animation)
