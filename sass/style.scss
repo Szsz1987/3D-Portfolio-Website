@@ -38,7 +38,7 @@ body{
   height: 45rem;
   padding: 2rem;
   animation: show-animate 2s forwards;
-  //background: var(--cover-color);
+  background: var(--cover-color);
   perspective: 250rem;
 }
 
@@ -95,6 +95,10 @@ body{
   box-shadow: 0 0 .6rem rgba(0, 0, 0, .1);
   display: flex;
   padding: 2rem;
+}
+
+.book-page.page-left{
+  box-shadow: -.6rem .6rem .6rem, rgba(0, 0, 0, .1);
 }
 
 .profile-page{
